@@ -1,0 +1,11 @@
+#!/bin/sh
+qsub -q xeonphiq -v OMP_NUM_THREADS=1 -l select=1:ncpus=1 ./run
+qsub -q xeonphiq -v OMP_NUM_THREADS=2 -l select=1:ncpus=2 ./run
+qsub -q xeonphiq -v OMP_NUM_THREADS=5 -l select=1:ncpus=5 ./run
+qsub -q xeonphiq -v OMP_NUM_THREADS=10 -l select=1:ncpus=10 ./run
+qsub -q xeonphiq -v OMP_NUM_THREADS=20 -l select=1:ncpus=20 ./run
+qsub -q xeonphiq -v OMP_NUM_THREADS=30 -l select=1:ncpus=30 ./run
+qsub -q xeonphiq -v OMP_NUM_THREADS=40 -l select=1:ncpus=40 ./run
+qsub -q xeonphiq -v OMP_NUM_THREADS=50 -l select=1:ncpus=50 ./run
+qsub -q xeonphiq -v OMP_NUM_THREADS=60 -l select=1:ncpus=60 ./run
+qsub -q xeonphiq -v OMP_NUM_THREADS=70 -l select=1:ncpus=70 ./run

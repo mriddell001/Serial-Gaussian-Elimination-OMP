@@ -1,0 +1,19 @@
+#!/bin/sh
+### script to run one job
+
+### Set the job name
+#PBS -N hello
+
+### Join the standard output and standard error streams
+#PBS -j oe
+
+### Specify wallclock time required for this job, hhh:mm:ss
+#PBS -l walltime=00:59:59
+
+### set directory for job execution
+### EDIT THIS FOR YOUR LOGIN AND PATH
+cd ~jch-s30
+
+### record the date and execute
+date
+./a.out 8000
